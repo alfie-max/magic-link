@@ -1,7 +1,9 @@
-<p>Hey there! Here is your sign in link (you can only use it once):</p>
+<p>Hi there!</p>
 
-<p><%= link_to "Sign In", magic_link.authenticate_url(email: @email, sign_in_token: @token) %></p>
+<p>Someone requested a sign in link to Slingwave on behalf of this email address. Please click on the link below or type in the 4 digit code to login.</p>
 
-<p>Or use your 4 digit OTP to authorize : <%= @otp %></p>
+<p><%= link_to "Sign In Link", magic_link.authenticate_url(email: @email, sign_in_token: @token) %></p>
 
-<p>Thanks!</p>
+<p>Code: <%= @otp %></p>
+
+<p>- Team Slingwave</p>
