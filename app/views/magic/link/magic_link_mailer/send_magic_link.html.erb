@@ -2,4 +2,6 @@
 
 <p><%= link_to "Sign In", magic_link.authenticate_url(email: @email, sign_in_token: @token) %></p>
 
+<p>Or use your 4 digit OTP to authorize : <%= @otp %></p>
+
 <p>Thanks!</p>
