@@ -2,7 +2,7 @@
   <div class="col-sm-3"></div>
   <div class="col-sm-6">
 
-    <h2>Enter your OTP to verify your account</h2>
+    <h2>Click on the login link sent to your email or enter the 4-digit code here to login</h2>
     <br/>
 
     <%= form_with url: authenticate_path, local: true do |f| %>
@@ -14,7 +14,7 @@
       <br/>
 
       <div class="actions">
-        <%= f.submit "Verify", class: "btn btn-primary" %>
+        <%= f.submit "Login", class: "btn btn-primary" %>
       </div>
     <% end %>
 
